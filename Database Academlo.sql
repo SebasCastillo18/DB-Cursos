@@ -56,6 +56,26 @@ name
 
 values('Desarrollo Backend');
 
+insert into categories (
+
+
+name
+
+
+
+)
+
+values('Desarrollo Frontend');
+
+
+insert into categories(
+
+name
+
+)
+
+values('Desarrollo Full-Stack');
+
 ALTER TABLE "users" ADD FOREIGN KEY ("course_id") REFERENCES "courses" ("id");
 
 ALTER TABLE "course_videos" ADD FOREIGN KEY ("course_id") REFERENCES "courses" ("id");
@@ -102,3 +122,117 @@ values (
 22
 
 );
+
+insert into courses (
+
+title,
+description,
+"level",
+teacher
+
+
+)
+
+values (
+
+'HTML',
+'HyperText Markup Language',
+'Principiante',
+'Armando Castro'
+
+
+);
+
+insert into courses (
+
+title,
+description,
+"level",
+teacher
+
+
+)
+
+values (
+
+'CSS',
+'Cascade StyleSheet',
+'Principiante',
+'Rodrigo Torres'
+
+
+);
+
+insert into course_videos (
+
+title,
+url,
+course_id
+
+
+)
+
+values(
+
+'Primer Video de HTML',
+'https://www.html-basico.com',
+1
+
+);
+
+insert into course_videos (
+
+title,
+url,
+course_id
+
+
+)
+
+values(
+
+'Primer Video de CSS',
+'https://www.css-basico.com',
+2
+
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
